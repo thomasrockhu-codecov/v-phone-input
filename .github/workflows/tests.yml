@@ -80,11 +80,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Download unit coverage artifacts
+      - name: Download e2e coverage artifacts
         uses: actions/download-artifact@v3
         with:
-          name: coverage-unit
-          path: coverage/coverage-unit
+          name: coverage-e2e
+          path: coverage/coverage-e2e
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
