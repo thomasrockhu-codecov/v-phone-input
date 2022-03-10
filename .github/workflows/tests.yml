@@ -85,11 +85,6 @@ jobs:
         with:
           name: coverage-unit
           path: coverage/coverage-unit
-      - name: Download e2e coverage artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: coverage-e2e
-          path: coverage/coverage-e2e
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
